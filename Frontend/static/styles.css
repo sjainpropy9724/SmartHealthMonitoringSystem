@@ -1,0 +1,94 @@
+body {
+    background: #f4f6f9;
+    font-family: "Segoe UI", sans-serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin-top: 50px;
+  }
+  
+  .card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+  h2 {
+    font-weight: 700;
+    color: #333;
+  }
+  
+  table {
+    margin-top: 20px;
+  }
+  
+  thead {
+    background-color: #212529;
+    color: white;
+  }
+  
+  tbody tr:hover {
+    background-color: #f1f3f5;
+  }
+  
+  .btn-filter {
+    background-color: #0d6efd;
+    color: white;
+  }
+  
+  .btn-download {
+    background-color: #198754;
+    color: white;
+    font-weight: 500;
+    padding: 6px 12px; /* same as Bootstrap’s .btn */
+    border: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .btn-download:hover {
+    background-color: #157347;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }  
+  
+  .btn-open {
+    background-color: #0dcaf0;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .btn-save {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    font-weight: 500;
+  }
+  
+  .btn {
+    padding: 4px 10px;
+    font-size: 0.9rem;
+    border-radius: 6px;
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    padding: 10px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    table {
+      font-size: 0.85rem;
+    }
+  }
+  
