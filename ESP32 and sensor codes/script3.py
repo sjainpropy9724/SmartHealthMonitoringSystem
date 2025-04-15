@@ -7,10 +7,12 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from datetime import datetime
 from supabase import create_client, Client
+from dotenv import load_dotenv
+import os
 
-# ----------------- Supabase Configuration -----------------
-SUPABASE_URL = "https://wjqlervxbljhkscrteld.supabase.co"
-SUPABASE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndqcWxlcnZ4YmxqaGtzY3J0ZWxkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDM4MjgxODUsImV4cCI6MjA1OTQwNDE4NX0.UJiOIJPtD4sY6Tgscur8RouPi-0jPIIYJuC18uerqyQ"
+load_dotenv()  # Load environment variables from .env file
+SUPABASE_URL = os.getenv("SUPABASE_URL")
+SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # ----------------- Serial Setup -----------------
