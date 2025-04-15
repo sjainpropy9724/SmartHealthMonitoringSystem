@@ -1,0 +1,46 @@
+HITIComm revisions ********************************************
+
+1.6.1 (2023-11-03)
+1.6.0 (2023-10-04)
+1.5.9 (2023-07-25)
+	- No changes
+
+1.5.8 (2023-07-16)
+	HCS_Toolbox:
+		* added define: HCS_constrain()
+		* added function: float HCS_map()
+
+1.5.7 (2023-07-10)
+	- No changes
+
+1.5.6 (2023-07-02)
+	- No changes
+
+1.5.5 (2023-05-05)
+	- License:
+		* Apache License 2.0
+
+1.5.4 (2022-09-10)
+	- No changes
+
+1.5.2 (2021-08-11)
+	- New boards: 
+		* all SAMD boards
+	- DAC integration
+
+1.5.1 (2021-06-07)
+	- Minor bug fix:
+		* HCS_Type.h: NULL replaced by NULL_POINTER to avoid redefining macro and having warning
+		* HCS_LowAccess_Bus.cpp: ifndef func() => parenthesis removed
+
+1.5.0 (2021-04-17)
+	- COPYRIGHTED to Copyright Offices
+	- License:
+		* Open-source: Modified BSD License
+
+1.4.5 (2021-04-15)
+	- Library creation
+	- HITIComm library splitted into 2 libraries:
+		* HITIComm 		    (pre-compiled,   closed-source license)
+		* HITICommSupport 	(uncompiled,     open-source license)
+	- Version number is initialized at 1.4.5 => same version number as for HITIComm
