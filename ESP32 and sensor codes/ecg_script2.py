@@ -20,9 +20,10 @@ BAUD_RATE = 115200
 print(f"Connecting to {SERIAL_PORT} at {BAUD_RATE} baud...")
 try:
     ser = serial.Serial(SERIAL_PORT, BAUD_RATE, timeout=1)
+    ser.reset_input_buffer()
     # Send a wake-up pulse (optional)
     ser.write(b'\r\n')
-    time.sleep(2)
+    time.sleep(5)
 except Exception as e:
     print(f"Serial connection failed: {str(e)}")
     exit(1)
@@ -30,7 +31,7 @@ except Exception as e:
 # Improved ready check
 print("Waiting for ESP32 ready signal", end='', flush=True)
 start_time = time.time()
-while time.time() - start_time < 15:  # 15 second timeout
+while time.time() - start_time < 30:  # 30 second timeout
     if ser.in_waiting:
         line = ser.readline().decode('utf-8').strip()
         print(f"\nReceived: '{line}'")
