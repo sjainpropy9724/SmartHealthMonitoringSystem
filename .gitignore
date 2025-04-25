@@ -4,3 +4,5 @@ flaskenv
 *.pyo
 *.pyd
 .env
+render.yaml
+supabase_config.py
