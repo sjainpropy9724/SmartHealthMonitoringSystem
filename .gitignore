@@ -6,3 +6,5 @@ flaskenv
 .env
 render.yaml
 supabase_config.py
+supabaseDB_Pass.txt
+ecg_script2.py
